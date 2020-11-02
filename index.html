@@ -72,41 +72,6 @@
 			<div  class = "presentation_title" style=" text-align: center " ><small style="color:lightgoldenrodyellow">Remote Sensing | Introductory Exercise Course</small> </div>	<!--The title of the presentation appears on each slide-->
 				
 				
-						<!-- !!!!! NEW RDF METADATA !!!!!
-						AUTHORS: DEFINE METADATA FOR WHOLE SLIDESET HERE: 
-			three metadata lists are used, this one for the entire course, a similar  and per lesson (machting with learning objectives), 
-			and a reduced one per slide 
-
-			@prefix dc: <http://purl.org/dc/terms/>.
-				@prefix eo4geo: <http://bok.eo4geo.eu/>.
-				<>  	dc:title "Practice: image processing and analysis";
-					dc:creator "Stefan Lang, University of Salzburg";
-					dc:subject "Copernicus, EO4GEO, WP5, Satellite, Earth Observation";
-					dc:abstract "This introductory course in remote sensing and (satellite) image analysis covers the basic analysis workflow. It requires a lecture 
-						or any other introductory class in the theoretical fundamentals of remote sensing";
-					dc:tableOfContents "(1) Organisational issues and introduction; (2) Image repositories and data access; (3) Specifics of image data; 
-						(4) Visualising and exploring image data; (5) Spatial referencing; (6) Radiometric correction; (7) Image pre-processing; 
-						(8) Image classification; (9) Validation; (10) Publishing results";
-					dc:description "Learning outcomes: Understand remote sensing workflow including image acquisition, (pixel-based) image analysis, classification 
-						and validation; get to know online portals, data catalogues, and pricing schemes for satellite data; Familiarize with the European 
-						Copernicus Earth observation programme; Master standard image analysis routines as implemented in ArcGIS Pro";
-					dc:contributor "Barbara Hofer, Eva Missoni";
-					dc:created "2020-06-20";
-					dc:type "InteractiveResource";
-					dc:format "html";
-					dc:language "EN"; 
-					dc:SizeOrDuration "14units x 90min"
-					dc:audience "students";
-					dc:educationLevel "EQF 6";
-					dc:source "Existing training material of the course: Practice: image processing and analysis";
-					dc:rightsHolder "Stefan Lang, University of Salzburg";
-					dc:license "CC BY-SA 4.0";
-					dc:relation eo4geo:TA7-5-1;
-					dc:relation eo4geo:TA7-5-2;
-					dc:relation eo4geo:GS3 .	
-			
-			 -->
-
 			
 			<div class="slides">
 				
@@ -358,10 +323,21 @@
 					<section id= 011_iii>
 						<h2>01.1 <small>(iii)</small> Course schedule and syllabus</h2> 
 							This course takes place <em>Wednesdays, 16.00 - 18.00</em> in the <b>GI Lab</b>. Press "show schedule" for more details
-							on the current syllabus and schedule for this semester. Updates or any occuring changes you may find in 
-							<a href= "https://online.uni-salzburg.at/plus_online/wbLv.wbShowLVDetail?pStpSpNr=480447">PlusOnline</a>.  
-														
-							<br><button id="btn">Show schedule</button>	 
+							on the current syllabus and schedule for this semester. Updates or any occuring changes you may find in
+							<a href= "https://online.uni-salzburg.at/plus_online/wbLv.wbShowLVDetail?pStpSpNr=480447">PlusOnline</a>.<p>   
+							<img width=600 height=360 src ="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/011_3.png" alt="Time plan">	
+							<p>Depending on the Covid-19 regulations, the course is offered in hybrid or online mode. 
+							<ul><li>Challenges</li>
+								<ul><li>No face-to-face contact, harder to get to know each other </li>
+								<li>Difficult to interact, raise questions, contribute to discussions</li></ul>
+							</li>Benefits</li>
+								<ul><li>Testing new ways of blended learning, flipped classroom settings, online material, etc.</li>
+								<li>Option to revisit recorded sessions (if provided)</li>
+								<li>Pre- and after-class sessions open for clarifications, side questions, etc.</li></ul>
+							</ul>
+
+						
+							<p><button id="btn">Show schedule</button>	 
 							<div id="syllabus"></div>
 						
 							<script src="js/loadsyl.js"></script>
@@ -373,7 +349,7 @@
 						<h3>Workload</h3>  
 						<p>UE = <em>"continuous assessment course"</em>. What does that mean?
 								The course implies mandatory <b>presence</b>, active <b>participation</b>, and <b>submission</b> of all assignments; 
-								on the other hand … no final examination
+								on the other hand, no final examination takes place!
 						<p>The course consists of <b>7-8 present dates</b> with 30 min theoretical background and revision
 							assignments; 60 min joint practical exercise including discussion of relevant concepts. 
 							Tutorials are offered <b>2-3 times</b> per semester.
@@ -406,7 +382,7 @@
 						<h3 style="color:orange;">Assignments (A1 … A5)</h3>  
 							Assignments and the respective learning outcomes follow the Bloom's taxonomy of skills levels 
 							(Anderson 2001). That means skills acquired in the assignments range from basic 
-							(<em>remember</em>) to advanced (<em>create</em>).
+							(<em>remember</em>) in the earlier, to advanced (<em>create</em>) in the later, assignments.
 							<p><img width=600 height=360 src ="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/011_4.png" alt="Bloom's taxonomy">
 					</section>
 
@@ -451,7 +427,21 @@
 
 					<section id= 011_vi>
 						<h2>01.1 <small>(vi)</small> Software and data sets used</h2> 
-						<p style="color: red;"><b>[to be completed]</b></p>		
+						<ul><li><b>Satellite data</b>
+							<ul><li>All data are located in the MyFiles share (see Blackboard)</li>
+								<li>Data are real data, no ‘fake’ or fabricated data</li> 
+								<li>NB: data may be subject to license agreements restricting their usage to research or educational purposes. 
+									Copying or using those data for any other purpose is prohibit.</lI>
+							</ul></li>
+							<li><b>Software</b>: ArcGIS Pro by ESRI (Image Analysis components)</li>
+							<ul><li>It is easy to use, convenient look & feel</li>
+							<li>Workflows are pre-defined and guided (‚one-click‘)</li>
+							<li>You can stay within one environment (no change of software, transfer of data, etc.)</li>
+							<li>But: ArcGIS Pro is a commercial software package</li>
+							</ul></li>
+					</ul>
+
+						<p><img width=600 height=200 src ="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/011_6.png" alt="Software and data">	
 					</section>
 
 					<section id= 011_vii>
@@ -490,11 +480,9 @@
 
 					<section id="012_i">
 						<h2>01.2 <small>(i)</small> Satellite remote sensing</h2>  
-						<blockquote style="color: darkslategray;">"From time immemorial people have used vantage points high above the landscape to 
+						<blockquote style="color: gray;">"From time immemorial people have used vantage points high above the landscape to 
 							view the terrain  below. From these lookouts they could get a ‘<b>bird’s eye view</b>’ of the 
-							region. They could study the landscape and interpret what they saw.  
-							The search might be for good hunting grounds, easy passage through the region, 
-							or the best strategy to attack an enemy. The advantage of collecting <b>information about 
+							region. They could study the landscape and interpret what they saw. The advantage of collecting <b>information about 
 								the landscape from a distance</b> was recognized long ago. Remote sensing as we know it 
 							today is the technique of collecting information from a distance. 
 							By convention, ‘from a distance’ is generally  considered to be <b>large</b> relative 
@@ -504,7 +492,6 @@
 
 							<p><img data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/012_1.png" alt="Fig. 012_1">
 							<br><small>Our ancestors practiced remote sensing from hills or trees</small>	
-							<p style="color: red;">[source definition from JSON - one single JSON file for lessons (here) and topics (lesson ToC)]</p>	
 					</section>
 					
 					<section>
