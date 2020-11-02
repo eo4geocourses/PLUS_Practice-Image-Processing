@@ -7,7 +7,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Image processing and analysis</title>
+		<title>Image Processing & Analysis</title>
 		
 		<meta property="dc:title" content="Practice: image processing and analysis" />
 		<meta property="dc:creator" content="Stefan Lang" /> 
@@ -69,7 +69,7 @@
 		
 			<div class = "eo4geologo" style="width: 11%;height : 11%" ></div>	
 			<div class = "partnerlogo" style="width: 15%;height : 11%" ></div>	
-			<div  class = "presentation_title" style=" text-align: center " >Introductory exercise course to remote sensing</div>	<!--The title of the presentation appears on each slide-->
+			<div  class = "presentation_title" style=" text-align: center " ><small style="color:lightgoldenrodyellow">Remote Sensing | Introductory Exercise Course</small> </div>	<!--The title of the presentation appears on each slide-->
 				
 				
 						<!-- !!!!! NEW RDF METADATA !!!!!
@@ -317,14 +317,14 @@
 						<h1>01.1 | Course overview and structure</h1>
 						<h2>Content and topics [lesson 1.1]</h2><p>  
 						<table>
-							<tr><td><i>#</i></td><td><b>Content</b></td><td><b>BoK concept</b></td></tr>
-							<tr><td><a href="#011_i">i</a></td><td>Overview course structure and learning objectives</td><td>n/a</td></tr>
-							<tr><td>ii</td><td>Experience and prior knowledge</td><td>n/a</td></tr>
-							<tr><td>iii</td><td>Road map and syllabus</td><td>n/a</td></tr>
-							<tr><td>iv</td><td>Workload, assignments and grading</td><td>n/a</td></tr>
-							<tr><td><a href="#011_v">v</a></td><td>Literature and reference material</td><td>n/a</td></tr>
-							<tr><td>vi</td><td>Software and data being used</td><td>n/a</td></tr>
-							<tr><td>vii</td><td>Tutorials</td><td>n/a</td></tr>
+							<tr><td><i>#</i></td><td><b>Content</b></td></tr>
+							<tr><td><a href="#011_i">i</a></td><td>Overview course structure and learning objectives</td></tr>
+							<tr><td><a href="#011_ii">ii</a></td><td>Experience and prior knowledge</td></tr>
+							<tr><td><a href="#011_iii">iii</td><td>Road map and syllabus</td></tr>
+							<tr><td><a href="#011_iv">iv</td><td>Workload, assignments and grading</td></tr>
+							<tr><td><a href="#011_v">v</a></td><td>Literature and reference material</td></tr>
+							<tr><td><a href="#011_vi">vi</td><td>Software and data being used</td></tr>
+							<tr><td><a href="#011_vii">vii</td><td>Tutorials</td></tr>
 						</table>
 					</section>
 
@@ -344,21 +344,22 @@
 						</table>
 					</section>
 
-					<section>
+					<section id= 011_ii>
 						<h2>01.1 <small>(ii)</small> Experience and prior knowledge</h2> 
-							The course relies on <b>general interest</b> and <b>prior knowledge</b> in remote sensing, e.g. to be acquired by completion of 
-							introductory course LV BLASCHKE (TIEDE/AUGUSTIN) <em>“Remote Sensing and Image Processing”</em>
-						<p> Technical skills are acquired in the course; it is recommended to enroll 
-							in the UE MITTLBOECK <em>"Introduction to GIS"</em>, which runs in parallel to this course.</p>
+							The course relies on <b>general interest</b> and <b>prior knowledge</b> in remote sensing. There are no hard prerequisites, but it is 
+							recommended to having completed or enroll in parallel to the introductory lecture course 
+							<em style="color:lightgoldenrodyellow">“Remote Sensing and Image Processing” (VL BLASCHKE)</em>.
+						<p> This course conveys specific technical skills. If you want to familiarize even better with the software environment, you may
+							enroll to <em style="color:lightgoldenrodyellow">"Introduction to GIS" (UE MITTLBOECK)</em>.
 						<p> <b>General skills </b>are acquired according to <em>Bloom's taxonomy</em> of skills levels (see below, @Assignments).
 					
 					</section>
 
-					<section>
+					<section id= 011_iii>
 						<h2>01.1 <small>(iii)</small> Course schedule and syllabus</h2> 
-							This course takes place <em>Wednesdays, 16.00 - 18.00</em> in the <b>GI Lab</b>. Press the button below to 
-							show the course syllabus and the planned schedule. 
-							Updates or any occuring changes you may find in <a href= "https://online.uni-salzburg.at/plus_online/wbLv.wbShowLVDetail?pStpSpNr=480447">PlusOnline</a>.  
+							This course takes place <em>Wednesdays, 16.00 - 18.00</em> in the <b>GI Lab</b>. Press "show schedule" for more details
+							on the current syllabus and schedule for this semester. Updates or any occuring changes you may find in 
+							<a href= "https://online.uni-salzburg.at/plus_online/wbLv.wbShowLVDetail?pStpSpNr=480447">PlusOnline</a>.  
 														
 							<br><button id="btn">Show schedule</button>	 
 							<div id="syllabus"></div>
@@ -367,7 +368,7 @@
 
 					</section>
 
-					<section>
+					<section id= 011_iv>
 						<h2>01.1 <small>(iv)</small> Workload, assignments and grading</h2> 
 						<h3>Workload</h3>  
 						<p>UE = <em>"continuous assessment course"</em>. What does that mean?
@@ -381,13 +382,14 @@
 
 					<section>
 						<h2>01.1 <small>(iv <i>cont.</i>)</small> Workload, assignments and grading</h2> 
-						<h3 style="color:red;">Assignments (A1 … A5)</h3>  
-							<ul><li>... will be announced in the respective class</li>
-								<li>need to be delivered <b>in time</b> to receive feedback 
-								<li>one attempt at a time</li>
-								<li>Please obey the following naming convention: <br><b>A[n]_[lastname]</b>, e.g. <em>A1_Johnson</em></li>
-								<li>Use <b>PFD format</b> exclusively!</li></ul>
-						<p>Grading: < 50% = insufficient |...| > 85% = very good. Point distribution:</p>
+						<h3 style="color:orange;">Assignments (A1 … A5)</h3>  
+							<ul><li>Assignments will be announced in the respective class</li>
+								<li>... need to be delivered <b>in time</b> to receive feedback (watch your calendar in BlackBoard)
+								<li>... one attempt at a time</li></ul>
+								
+						<p>Please obey the following naming convention: <br><b>A[n]_[lastname]</b>, e.g. <em>A1_Johnson</em></li>. Please 
+							use <b>PFD format</b> exclusively!
+						<p>Grading: < 50% = insufficient |...| > 85% = very good. Grade distribution:</p>
 							<small><table><tr><td>Assignment</td><td>Points</td></tr>
 								<tr><td>1</td><td>10</td></tr>
 								<tr><td>2</td><td>15</td></tr>
@@ -401,9 +403,9 @@
 
 					<section>
 						<h2>01.1 <small>(iv <i>cont.</i>)</small> Workload, assignments and grading</h2> 
-						<h3 style="color:red;">Assignments (A1 … A5)</h3>  
+						<h3 style="color:orange;">Assignments (A1 … A5)</h3>  
 							Assignments and the respective learning outcomes follow the Bloom's taxonomy of skills levels 
-							(revised by Anderson 2001). That means skills acquired in the assignments range from basic 
+							(Anderson 2001). That means skills acquired in the assignments range from basic 
 							(<em>remember</em>) to advanced (<em>create</em>).
 							<p><img width=600 height=360 src ="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/011_4.png" alt="Bloom's taxonomy">
 					</section>
@@ -447,14 +449,14 @@
 
 					</section>
 
-					<section>
+					<section id= 011_vi>
 						<h2>01.1 <small>(vi)</small> Software and data sets used</h2> 
-						<p style="color: red;">[more details on software]</p>		
+						<p style="color: red;"><b>[to be completed]</b></p>		
 					</section>
 
-					<section>
+					<section id= 011_vii>
 						<h2>01.1 <small>(vii)</small> Tutorial</h2> 
-						<p style="color: red;">[more details on tutorial]</p>					
+						<p style="color: red;"><b>[to be completed]</b></p>					
 					</section>
 
 				</section>
