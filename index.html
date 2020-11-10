@@ -43,6 +43,7 @@
 		<link rel="dc:relation" href="eo4geo:IP1" />	
 		<link rel="dc:relation" href="eo4geo:IP3-4" />
 		<link rel="dc:relation" href="eo4geo:IP4-2-1" />
+		<!-- plus a decent number of additional representative concepts -->
 				
 		<link rel="stylesheet" href="internal_restricted/v1.0/css/reveal.css">
 		<!-- CHOOSE BETWEEN 2 EO4GEO TEMPLATE THEMES:-->
@@ -69,7 +70,7 @@
 		
 			<div class = "eo4geologo" style="width: 11%;height : 11%" ></div>	
 			<div class = "partnerlogo" style="width: 15%;height : 11%" ></div>	
-			<div  class = "presentation_title" style=" text-align: center " ><small style="color:lightgoldenrodyellow">Remote Sensing | Introductory Exercise Course</small> </div>	<!--The title of the presentation appears on each slide-->
+			<div  class = "presentation_title" style=" text-align: center " ><small style="color:darkslategrey">Remote Sensing | Introductory Exercise Course</small> </div>	<!--The title of the presentation appears on each slide-->
 				
 				
 			
@@ -96,7 +97,7 @@
 					</script>
 					<h1>Image Processing & Analysis</h1>
 					<h2>Exercise course [UE] - 655.352</h2>
-					<em>Assoc-Prof Dr Stefan Lang</em><p>
+					<em>Prof Dr Stefan LANG</em><p>
 					
 					<a href="#" id="title"><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/cover2o.png" alt="title2 start"></a>
 					<div id="titlelight" style="display:none;"><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/cover2.png" alt="title2"></div>
@@ -116,33 +117,29 @@
 						
 						<section>
 							<h1>Welcome to this course!</h1> 
-							<p>This is an introductory exercise course to remote sensing. </p>
-							<a href="#" class="navigate-down"><img data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/arrow_dwn.png" alt="Down arrow"></a>
 							<h2>Disclaimer</h2><p> 
-							This course material has been developed using tools, concepts and guidelines under the framework of the <a href="www.eo4geo.eu">EO4GEO</a> project. 
+							This is an introductory exercise course to remote sensing. The course material has been developed using tools, concepts and guidelines under the framework of the <a href="www.eo4geo.eu">EO4GEO</a> project. 
 							Unless stated otherwise, all rights for figures and additional material are with the author(s). <p>
-							<small>(c) <a href="www.zgis.at">Z_GIS</a> [S Lang] | Mar-Jun 2020</small>
-							<p class="fragment">You can navigate through <em>vertical slides</em> by 
+							<small>(c) <a href="www.zgis.at">Z_GIS</a> (S Lang) | 2020</small>
+							<p class="fragment"><small>You can navigate through <em>vertical slides</em> by 
 							pressing the <em>Down / Up</em> keys on your keyboard or the navigation arrows 
-							at the bottom of each slide.</p>
+							at the bottom of each slide.</small></p>
 									
-							<p><span class="fragment"><b>So move further down ... </b></span> <span class="fragment">
-								<b>for the ToC of this course.</b></span></p>
 						</section>
 
 						<section>
-							<h1>Overview course content</h1> 
+							<h2>Table of content (ToC)</h2> 
 							<table>
-								<tr><td><a href="#ov_01"><b>1</b></a></td><td><b>Organisation and introduction</b></td><td>2</td><td><a href="#/2"><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U1_sm.png"></a></td></tr>
-								<tr><td><a href="#ov_02"><b>2</b></a></td><td><b>Image repositories and data access</b></td><td>2</td><td><a href="#/5"><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U2_sm.png"></a></td></tr>
-								<tr><td><a href="#ov_03"><b>3</b></a></td><td><b>Specifics of image data</b></td><td>2</td><td><a href="#/8"><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U3_sm.png"></a></td></tr>
-								<tr><td><a href="#ov_04"><b>4</b></a></td><td><b>Visualising and exploring image data</b></td><td>3</td><td><a href="#/11"><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U4_sm.png"></a></td></tr>
-								<tr><td><a href="#ov_05"><b>5</b></a></td><td><b>Spatial referencing</b></td><td>2</td><td><a href="#/15"><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U5_sm.png"></a></td></tr>
-								<tr><td><a href="#ov_06"><b>6</b></a></td><td><b>Radiometric correction</b></td><td>3</td><td><a href="#/18"><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U6_sm.png"></a></td></tr>
-								<tr><td><a href="#ov_07"><b>7</b></a></td><td><b>Image pre-processing</b></td><td>3</td><td><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U7_sm.png"></td></tr>
-								<tr><td><a href="#ov_08"><b>8</b></a></td><td><b>Image classification</b></td><td>2</td><td><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U8_sm.png"></td></tr>
-								<tr><td><a href="#ov_09"><b>9</b></a></td><td><b>Validation (accuracy assessment)</b></td><td>2</td><td><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U9_sm.png"></td></tr>
-								<tr><td><a href="#ov_10"><b>10</b></a></td><td><b>Publishing results</b></td><td>2</td><td><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U10_sm.png"></td></tr>
+								<tr><td><a href="#ov_01"><b>1</b></a></td><td><i>Organisation and introduction</i></td><td><a href="#/2"><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U1_sm.png"></a></td></tr>
+								<tr><td><a href="#ov_02"><b>2</b></a></td><td><i>Image repositories and data access</i></td><td><a href="#/5"><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U2_sm.png"></a></td></tr>
+								<tr><td><a href="#ov_03"><b>3</b></a></td><td><i>Specifics of image data</i></td><td><a href="#/8"><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U3_sm.png"></a></td></tr>
+								<tr><td><a href="#ov_04"><b>4</b></a></td><td><i>Visualising and exploring image data</i></td><td><a href="#/11"><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U4_sm.png"></a></td></tr>
+								<tr><td><a href="#ov_05"><b>5</b></a></td><td><i>Spatial referencing</i></td><td><a href="#/15"><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U5_sm.png"></a></td></tr>
+								<tr><td><a href="#ov_06"><b>6</b></a></td><td><i>Radiometric correction</i></td><td><a href="#/18"><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U6_sm.png"></a></td></tr>
+								<tr><td><a href="#ov_07"><b>7</b></a></td><td><i>Image pre-processing</i></td><td><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U7_sm.png"></td></tr>
+								<tr><td><a href="#ov_08"><b>8</b></a></td><td><i>Image classification</i></td><td><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U8_sm.png"></td></tr>
+								<tr><td><a href="#ov_09"><b>9</b></a></td><td><i>Validation (accuracy assessment)</i></td><td><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U9_sm.png"></td></tr>
+								<tr><td><a href="#ov_10"><b>10</b></a></td><td><i>Publishing results</i></td><td><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U10_sm.png"></td></tr>
 							</table>
 						</section>
 	
@@ -154,7 +151,11 @@
 								<tr><td>01.2</td><td>Earth observation in practice</td><td>6</td></tr>
 								<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U1_ov.png" alt="U1 overview image">
 							</table>
-							<p style="color: red;">[get ToC elements from JSON]</p>
+							<a href="#/1/1">
+								<img data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/arrow_toc.png" alt="ToC arrow">
+							</a>
+							<!-- get ToC elements from JSON-->
+
 						</section>
 	
 						<section id="ov_02">
@@ -165,6 +166,9 @@
 								<tr><td>02.2</td><td>Data access</td><td>6</td></tr>
 								<img  src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U2_ov.png" alt="U2 overview image">
 							</table>
+							<a href="#/1/1">
+								<img data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/arrow_toc.png" alt="ToC arrow">
+							</a>
 						</section>
 	
 						<section id="ov_03">
@@ -175,6 +179,9 @@
 								<tr><td>03.2</td><td>Histograms</td><td>3</td></tr>
 								<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U3_ov.png" alt="U3 overview image">
 							</table>
+							<a href="#/1/1">
+								<img data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/arrow_toc.png" alt="ToC arrow">
+							</a>
 						</section>
 
 						<section id="ov_04">
@@ -186,6 +193,9 @@
 								<tr><td>04.3</td><td>Band combination</td><td>3</td></tr>
 								<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U4_ov.png" alt="U4 overview image">
 							</table>
+							<a href="#/1/1">
+								<img data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/arrow_toc.png" alt="ToC arrow">
+							</a>
 						</section>
 
 						<section id="ov_05">
@@ -196,6 +206,9 @@
 								<tr><td>05.2</td><td>GCP collection and referencing</td><td>5</td></tr>
 								<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U5_ov.png" alt="U5 overview image">
 							</table>
+							<a href="#/1/1">
+								<img data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/arrow_toc.png" alt="ToC arrow">
+							</a>
 						</section>
 
 						<section id="ov_06">
@@ -207,6 +220,9 @@
 								<tr><td>06.3</td><td>Topographic correction</td><td>3</td></tr>
 								<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U6_ov.png" alt="U6 overview image">
 							</table>
+							<a href="#/1/1">
+								<img data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/arrow_toc.png" alt="ToC arrow">
+							</a>
 						</section>
 
 						<section id="ov_07">
@@ -218,6 +234,9 @@
 								<tr><td>07.3</td><td>Image fusion and PCA</td><td>3</td></tr>
 								<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U7_ov.png" alt="U7 overview image">
 							</table>
+							<a href="#/1/1">
+								<img data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/arrow_toc.png" alt="ToC arrow">
+							</a>
 						</section>
 						
 						<section id="ov_08">
@@ -238,6 +257,9 @@
 								<tr><td>09.2</td><td>Product validation</td><td>3</td></tr>
 								<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U9_ov.png" alt="U9 overview image">
 							</table>
+							<a href="#/1/1">
+								<img data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/arrow_toc.png" alt="ToC arrow">
+							</a>
 						</section>
 
 						<section id="ov_10">
@@ -248,9 +270,8 @@
 								<tr><td>10.2</td><td>tbd</td><td>x</td></tr>
 								<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U10_ov.png" alt="U10 overview image">
 							</table>
-							<p>
 							<a href="#/1/1">
-								<img data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/arrow_up.png" alt="Up arrow">
+								<img data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/arrow_toc.png" alt="ToC arrow">
 							</a>
 						</section>
 						
@@ -1197,8 +1218,8 @@
 					<section id= 041_i>
 						<h2>04.1 <small>(i)</small> Sensor characteristics (Landsat/Sentinel-2 vs. Worldview-2)</h2> 
 						<h3 style="color:gray;">Typical features of HR vs. VHR sensors</h3>
-						Using the examples of two representatives of the <b>high-resolution (HR)</b> optical satellites family (Landsat-8 & Sentinel-2) 
-						and a <b>VHR satellite</b> (Worldview-2), ... 
+						<p>Using the examples of two representatives of the <b>high-resolution (HR)</b> optical satellites family (Landsat-8 & Sentinel-2) 
+						and a <b>VHR satellite</b> (Worldview-2) </p>
 						<img width=80% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/041_1.png" alt="Fig. 041_1">
 						<small>Sensor characteristcs Sentinel-2 vs. Landsat-8. See <a href="https://earth.esa.int/web/sentinel/user-guides/sentinel-2-msi/overview">link</a>.</small>				
 
@@ -1207,8 +1228,8 @@
 					<section id= 041_ii>
 						<h2>04.1 <small>(ii)</small> Satellite image metadata analysis</h2> 
 						<h3 style="color:gray;">The EO Compass</h3>
-						<p>A stand-alone webtool to understand the global coverage and quality of Sentinel-2 image acquisition based on image metadata analysis. 
-							<br><img width=80% height=80% src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/041_2.png" alt="Fig. 041_2">	
+						<p>A stand-alone webtool to understand the global coverage and quality of Sentinel-2 image acquisition based on image metadata analysis. </p>
+							<img width=80% height=80% src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/041_2.png" alt="Fig. 041_2">	
 							<br><small><a href="http://eo-compass.zgis.at">EO Compass</a> (Sudmanns et al., 2019) | (c) Z_GIS</small>	
 					</section>
 

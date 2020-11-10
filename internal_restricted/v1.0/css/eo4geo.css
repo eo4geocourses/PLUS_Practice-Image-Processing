@@ -41,7 +41,7 @@ body {
   
 .scrollable {
     bottom: 0px;
-    overflow-y: auto  !important;
+    overflow-y: hidden !important;
     overflow-x: hidden !important;
 }
 
