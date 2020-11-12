@@ -1,9 +1,10 @@
  .partnerlogo
 {
 
- content: url(./resources/Z_GIS-Logo.png);
+ content: url(https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/Z_GIS-logo_transparent.png);
 top:0;
-
+  background: #293133;
+  background-color: #293133; 
   height: 100%;
   width: 100%;
   
@@ -11,7 +12,8 @@ top:0;
   position: absolute;
         top: 0%;
         right: 0%;
-  
+ 
+ 
 	justify-content: left;
 
 }
