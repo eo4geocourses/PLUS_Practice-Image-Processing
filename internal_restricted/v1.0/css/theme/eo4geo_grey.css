@@ -5,7 +5,30 @@ body {
   background-color:  	#293133; 
   }
   
- 
+ /* CAPTIONS: https://www.w3schools.com/tags/tag_figcaption.asp */
+figure {
+ /* border: 0px #cccccc solid;*/
+  padding: 2px;
+  margin: auto;
+  position: center;
+}
+
+figcaption {
+  font-size: 14px;
+  background-color: transparent;
+  color: whitesmoke;
+  font-style: italic;
+  padding: 0px;
+  text-align: inherit;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 50%;*/
+}
+
   
   .eo4geologo
 {

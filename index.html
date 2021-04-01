@@ -296,8 +296,8 @@
 						<h1>01.1 | Course overview and structure</h1> 
 						<h2>Learning objectives [lesson 1.1]</h2>
 							
-							<ul><li><p><i>Understand the structure and content of the course, as well as its requiements and objectives</p></li>
-							<li><p>Get an overview of the software environment and datasets being used</i></p></li></ul>
+							<ul><li><p><i>Understand the structure and content of the course, as well as its requiements and objectives</li>
+							<li>Get an overview of the software environment and datasets being used</i></p></li></ul>
 					</section>
 
 					<section>
@@ -346,8 +346,15 @@
 						<h2>01.1 <small>(iii)</small> Course schedule and syllabus</h2> 
 							This course takes place <em>Wednesdays, 16.00 - 18.00</em> in the <b>GI Lab</b>. Press "show schedule" for more details
 							on the current syllabus and schedule for this semester. Updates or any occuring changes you may find in
-							<a href= "https://online.uni-salzburg.at/plus_online/wbLv.wbShowLVDetail?pStpSpNr=480447">PlusOnline</a>.<p>   
-							<img width=600 height=360 src ="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/011_3.png" alt="Time plan">	
+							<a href= "https://online.uni-salzburg.at/plus_online/wbLv.wbShowLVDetail?pStpSpNr=480447">PlusOnline</a>.
+													
+							<div class="r-stack" style="position:relative; top: 50px; left: 10px; width:500px; height:220px; margin:0 auto;" >
+							<figure>
+								<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/011_3.png" alt="Time plan" />
+							</figure>
+							</div>
+						  						
+						<div style="font-size:18px">
 							<p>Depending on the Covid-19 regulations, the course is offered in hybrid or online mode. 
 							<ul><li>Challenges</li>
 								<ul><li>No face-to-face contact, harder to get to know each other </li>
@@ -356,14 +363,12 @@
 								<ul><li>Testing new ways of blended learning, flipped classroom settings, online material, etc.</li>
 								<li>Option to revisit recorded sessions (if provided)</li>
 								<li>Pre- and after-class sessions open for clarifications, side questions, etc.</li></ul>
-							</ul>
-
-						
+							</ul></div>
+													
 							<p><button id="btn">Show schedule</button>	 
 							<div id="syllabus"></div>
-						
 							<script src="js/loadsyl.js"></script>
-
+						
 					</section>
 
 					<section id= 011_iv>
@@ -480,11 +485,13 @@
 					<section>
 						<h1>01.2 | Earth observation in practice</h1> 
 						<h2>Learning objectives [lesson 1.2]</h2><p> 
+						<ul>
 							<li><em>Get to know the role of remote sensing in Earth observation and Copernicus</em></li>
 							<li><em>Familiarize with the practical dimension of satellite Earth observation 
 								by examples</li>
 							<li>Learn the principle of the image analysis workflow and image processing chain</li>
 							<li>Understand the difference between pixel- and object (or region-) based approach</em></li>
+						</ul>
 					</section>
 	
 					<section>
@@ -511,9 +518,10 @@
 							to what a person can reach out and touch, hundreds of meters, hundreds of kilometers, 
 							or more. The data collected from a distance are termed <b>remotely sensed data</b>." (Stan Aronoff,  1989)
 						</blockquote>
-
-							<p><img data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/012_1.png" alt="Fig. 012_1">
-							<br><small>Our ancestors practiced remote sensing from hills or trees</small>	
+						<figure> 
+							<img data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/012_1.png" class="center" alt="Fig. 012_1" >
+							<figcaption>Our ancestors practiced remote sensing from hills or trees (© XXX)</figcaption>
+						</figure>
 					</section>
 					
 					<section>
@@ -524,61 +532,68 @@
 								<li>Satellite <b>communication</b></li>
 								<li>Satellite / <b>Earth observation (EO)</b></li>
 							</ul>
-							<p><img data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/012_2.png" alt="Fig. 012_2">
-								<br><small>The three components of space assets. Combining (at least) two out of three is termed Integrated applications
-									by ESA</small>	
+						<figure><img data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/012_2.png" alt="Fig. 012_2">
+								<figcaption>The three components of space assets. Combining (at least) two out of three is termed Integrated applications by ESA</figcaption>
+						</figure>
 					</section>
 						
 					<section >
 						<h2>01.2 <small>(1 <i>cont.</i>)</small> Satellite navigation</h2>
 						<p>The European satellite navigation (SatNav) programme is called <em>Galileo</em>. With EGNOS, the European differential global positioning system, it belongs to the world spanning <em>global navigation satellite systems</em> (GNSS).</p>
-						<br><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/012_3.png" alt="SatNav"><br>
-						<small>Galileo-enabled smartphone devices can be used in many different <a href="https://www.usegalileo.eu/">applications</a>.</small>
+						<br>
+						<figure><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/012_3.png" alt="SatNav">
+							<figcaption>Galileo-enabled smartphone devices can be used in many different <a href="https://www.usegalileo.eu/">applications</a>.</figcaption>
+						</figure>
 					</section>
 						
 					<section >
 						<h2>01.2 <small>(1 <i>cont.</i>)</small> Satellite communication</h2>
 						<p>Communication via satellites (SatCom) allows <em>telecommunication</em> all around the globe. Communication satellites receive signals from Earth and retransmit them by a <em>transponder</em>.</p>
-						<br><img  data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/012_4.png" alt="SatCom">
-						<small>The satellite as a self-contained communications system: the example of <a href="https://www.intelsatgeneral.com/satellite-basics/">IntelSat</a>.</small>
-					</section>
+						<figure><img data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/012_4.png" alt="SatCom">
+							<figcaption>The satellite as a self-contained communications system: the example of <a href="https://www.intelsatgeneral.com/satellite-basics/">IntelSat</a>.</figcaption>
+						</figure>
+						</section>
 						
 					<section >
 						<h2>01.2 <small>(1 <i>cont.</i>)</small> Earth observation</h2>
 						<p>Earth observation (EO) is the systematic usage of <em>satellite remote 
 							sensing</em> technology for continuous or on-demand <em>imaging</em> 
 							or <em>measuring</em> of the Earth surface </p>
-						<br><img data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/012_5.png" alt="ISSView">
-						<small>A view from the Cupola, the observation deck of the International Space Station (ISS). 
-							Photograph taken by German astronaut <a href="https://twitter.com/astro_alex">A. Geerst</a>.</small>
+						<figure><img data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/012_5.png" alt="ISSView">
+							<figcaption>A view from the Cupola, the observation deck of the International Space Station (ISS). 
+							Photograph taken by German astronaut <a href="https://twitter.com/astro_alex">A. Geerst</a>.</figcaption>
+						</figure>
 					</section>
 					
 					<section id="012_ii">
 						<h2>01.2 <small>(ii)</small> What is Copernicus?</h2> 
 						<a href="https://www.copernicus.eu">Copernicus </a>is the conjoint Earth observation programme by the 
 						<a href="www.esa.int">European Space Agency (ESA)</a> and the European Commission (EC) as laid out in the <em>European Space Policy</em>. 
-						
-						<img width="80%" height="80%" src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/CopernicusLogo.png" alt="Copernicus logo">
-						<br>Copernicus uses satellite technology to support monitoring the state of our <em>environment</em> and our <em>social well-being</em>. 
+						<br>
+						<img width="75%" height="75%" src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/CopernicusLogo.png" alt="Copernicus logo">
+						<br>
+						<p style="font-size:22px">Copernicus uses satellite technology to support monitoring the state of our <em>environment</em> and our <em>social well-being</em>. 
 						Here are some of the main aspects observed by Copernicus (see lesson <a href="#022_vi"><b>2.2</b></a>):
-						<ul>
+						<ul style="font-size:22px">
 							<li>the conditions of the <b>atmosphere</b> or our <b>land and marine</b> ecosystems</li>
 							<li>the use of the land for <b>forestry</b> and <b>agriculture</b></li>
 							<li>the process of <b>urbanisation</b></li>
 							<li>the likely <b>climate change</b> impacts</li>
 							<li>the natural and man-made <b>disasters</b></li>
 							<li>our <b>human security</b> and <b>public health</b></li>
-						</ul>
+						</ul></p>
 					</section>
 
 					<section>
 						<h2>01.2 <small>(ii <i>cont.</i>)</small> What is Copernicus?</h2> 
+						<figure>
 						<img width="80%" height="80%" data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/012_6.png" alt="Fig. 012_6"><br>						
-						<small>New EO data, depicted by the database symbol on the left-hand side of the seesaw, make 'Mr or Mrs Copernicus' better 
-							positioned for their observations. Thus, EO data leverage a better overview and understanding (concept: S. Lang, drawing: A. Traun, 2016).
+							<figcaption>New EO data, depicted by the database symbol on the left-hand side of the seesaw, make 'Mr or Mrs Copernicus' better 
+							positioned for their observations. Thus, EO data leverage a better overview and understanding (© concept: S. Lang, drawing: A. Traun, 2016).
 							<!--Click image to <a ref="CopStory_short.mp3">listen</a> a bit to the story of Copernicus 
 							(text: S. Lang, speaker: S. Tumampos, 2020)-->
-						</small>	
+							</figcaption>	
+						</figure>
 					</section>
 
 					<section>
@@ -588,10 +603,11 @@
 							<li>Space segment</li>
 							<li>Integrated ground segment</li>
 							<li>Data access and information services</li>
-							
 						</ul>
-						<p><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/012_7.png" alt="CopSat"></p>
-
+						<figure>
+							<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/012_7.png" alt="CopSat"></p>
+						<figcaption>(© XXX)</figcaption>
+						</figure>
 					</section>
 
 					<section id="012_iii">
@@ -659,11 +675,13 @@
 
 						<h1>02.1 | Space and ground infrastructure</h1> 
 						<h2>Learning objectives [lesson 2.1]</h2>
-							<ul><li><p><i>Get an overview of different types of satellite sensors and platforms</p></li>
+						<ul>
+							<li><p><i>Get an overview of different types of satellite sensors and platforms</p></li>
 							<li><p>Compare two flagship satellite programmes (Landsat vs. Sentinel)</p></li>
 							<li><p>Conceptualise the term big EO data</p></li>
 							<li><p>Understand the principle of data acquisition and retrieval</p></li>
-							<li><p>Get to know the Copernicus data and information access service (DIAS)</i></p></li></ul>
+							<li>Get to know the Copernicus data and information access service (DIAS)</i></li>
+						</ul>
 					</section>
 	
 					<section>
@@ -689,64 +707,75 @@
 						<br>EO for sustainable development: <b>EO4SDG</b><small>EO (and GNSS) is crucial in supporting the achievement of the development goals (SDGs) as 
 							recognised by the UN. UNOOSA provides an <a href="https://www.unoosa.org/oosa/en/ourwork/space4sdgs/index.html">overview</a> 
 							on the potential of space in supporting the SDGs. </small></p>					
-
-						<img width="80%" height="80%" src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/021_1.png" alt="Fig. 021_1">
-						<br><small>The UN-SPIDER <a href="http://www.un-spider.org/">knowledge portal</a>, EO for SDGs, GEO/SS</small>
+						<figure>
+							<img width="75%" height="75%" src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/021_1.png" alt="Fig. 021_1">
+							<figcaption>The UN-SPIDER <a href="http://www.un-spider.org/">knowledge portal</a>, EO for SDGs, GEO/SS</figcaption>
+						</figure>
 					</section>
 
 					<section id="021_i">
 						<h2>02.1 <small>(i)</small> Space segment - EO satellites</h2>
 						<p>Copernicus is like a stage where different actors with their favourite instruments play together in a band. </p>
-						<img width="80%" height="80%" src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/021_1b.png" alt="Fig. 021_1b">
-						<br><small>Copernicus stage with its instruments - a galery of artistic satellite portraits (compilation: S Lang). An allegoric music video
-							 you can find here: <a href="https://www.youtube.com/watch?v=xZ20Y7efHak"><em>Bell' Earth</em></a></small>
-					</section>
+						<figure>
+							<img width="80%" height="80%" src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/021_1b.png" alt="Fig. 021_1b">
+							<figcaption>Copernicus stage with its instruments - a galery of artistic satellite portraits (compilation: S Lang). An allegoric music video
+							 you can find here: <a href="https://www.youtube.com/watch?v=xZ20Y7efHak"><em>Bell' Earth</em></a></figcaption>
+						</figure>
+							</section>
 
 					<section  id="021_ii">
 						<h2>02.1 <small>(ii)</small> Examples: NASA Landsat & Copernicus Sentinel</h2>
 						<p><a href="https://landsat.usgs.gov/landsat-8">Landsat-8</a> is the flagship of the long-lasting Landsat programme by NASA and USGS in 
 						the United States. The onboard instruments (sensors) of Landsat-8 are called <em>OLI</em> (optical) and <em>TIRS</em> (thermal). 
 						The Sentinel family is the backbone of the Copernicus EO space asset with Sentinel-2 carrying the optical instrument <em>MSI</em>.</p> 
-						<img width="80%" height="80%" src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/021_2.png" alt="Fig. 021_2"><br>
-						<small>Sentinel-2 vs. Landsat-8. A good overview can be found at the Airbus <a href="https://www.airbus.com/space/earth-observation/copernicus.html">global monitoring </a> page. </small>
+						<figure>
+							<img width="80%" height="80%" src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/021_2.png" alt="Fig. 021_2"><br>
+							<figcaption>Sentinel-2 vs. Landsat-8. A good overview can be found at the Airbus <a href="https://www.airbus.com/space/earth-observation/copernicus.html">global monitoring </a> page. </figcaption>
+						</figure>
 					</section>
 
 					<section  id="021_iii">
 						<h2>02.1 <small>(iii)</small> Big EO data</h2>
 						<p>The 4 "Vs" (volume, velocity, veracity, variety) usually describe the big data paradigm. A 5th V ('value') in EO asummes the investment in 
 						 Space infrastructure stimulates an emerging market in the downstream sector. </p>
-						<img width="80%" height="80%" src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/021_3.png" alt="Fig. 021_3">
-							<br><small>The 4+1 "Vs" describing the new paradigm of 'big EO data' as discussed by <a href="www.doi.org/doi.10.1080/17538947.2019.1585976">Sudmans et al. (2018)</a>. </small>
-					</section>
+						<figure>
+						 	<img width="80%" height="80%" src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/021_3.png" alt="Fig. 021_3">
+							<figcaption>The 4+1 "Vs" describing the new paradigm of 'big EO data' as discussed by <a href="www.doi.org/doi.10.1080/17538947.2019.1585976">Sudmans et al. (2018)</a>. </figcaption>
+						</figure>
+						</section>
 
 					<section>
 						<h2>02.1 <small>(iii <i>cont.</i>)</small> Big EO data</h2>
-						<p>The Copernicus space infrastructure programme is mainly represented by a suite of satellites called the 'Sentinels'.</p><img width="80%" height="80%" src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/021_3b.png" alt="Fig. 021_3b">
-							<br><small>Deployment schedule of the Copernicus Sentinel family (as by 2015)</small>
+						<p>The Copernicus space infrastructure programme is mainly represented by a suite of satellites called the 'Sentinels'.</p>
+						<figure><img width="90%" height="90%" src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/021_3b.png" alt="Fig. 021_3b">
+							<figcaption>Deployment schedule of the Copernicus Sentinel family (as by 2015)</figcaption>
+						</figure>
 					</section>
 
 					<section  id="021_iv">
 						<h2>02.1 <small>(iv)</small> Integrated ground segment</h2>
-						<p>The Copernicus integrated ground segment (IGS) includes</p>
-						<ul>
-							<li><p>Receiving stations</p></li>
-							<li><p>Satellite data storage systems</p></li>
-							<li><p>Information access services</p></li>
+						<p style="font-size: 22px">The Copernicus integrated ground segment (IGS) includes</p>
+						<ul style="font-size:22px">
+							<li>Receiving stations</li>
+							<li>Satellite data storage systems</li>
+							<li>Information access services</li>
 						</ul><br>
-						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/021_4.png" alt="Fig. 021_4">
-						<small>An integrated view of Copernicus and the related ground segment including existing data infrastructures, DIAS, and the 
+						<figure>
+							<img width="85%" height="85%" src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/021_4.png" alt="Fig. 021_4">
+							<figcaption>An integrated view of Copernicus and the related ground segment including existing data infrastructures, DIAS, and the 
 							user uptake segment (focus: knowledge & skills). Links to the mentioned projects: <a href="www.cophub-ac.eu">CopHub.AC</a> | 
-							<a href="www.eo4geo.eu">EO4GEO</a>.
-						</small>
+							<a href="www.eo4geo.eu">EO4GEO</a>.</figcaption>
+						</figure>
 					</section>
 
 					<section  id="021_v">
 						<h2>02.1 <small>(v)</small> Data and information access service (DIAS)</h2>
+						<figure>
 						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/021_5.png" alt="Fig. 021_5">
-						<small>The five DIAS online platforms allow users to discover, manipulate, process and download Copernicus data and information. 
+						<figcaption>The five DIAS online platforms allow users to discover, manipulate, process and download Copernicus data and information. 
 							All DIAS platforms provide access to Copernicus Sentinel data, as well as to the information products from Copernicus’ six operational 
-							services. Examples: <a href="https://creodias.eu/">CREODIAS</a> (left) | <a href="https://www.onda-dias.eu/cms/">ONDA DIAS</a> (right)</small>
-					
+							services. Examples: <a href="https://creodias.eu/">CREODIAS</a> (left) | <a href="https://www.onda-dias.eu/cms/">ONDA DIAS</a> (right)</figcaption>
+						</figure>
 					</section>
 
 					<section  id="021_vi">
@@ -786,7 +815,7 @@
 						<h2>Learning objectives [lesson 2.2]</h2> 
 							<ul><li><p><i>Get to know different sources and options for data search via free platforms</p></li>
 							<li><p>Understand how to search and acquire VHR satellite imagery ('tasking) from commercial data providers</p></lI>
-							<li><p>Learn how to access information layers from Copernicus services</i></p></li></ul>
+							<li>Learn how to access information layers from Copernicus services</i></li></ul>
 					</section>
 	
 					<section>
@@ -827,24 +856,26 @@
 						<a href="#" id="earthex"><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_1.png" alt="earthexplorer"></a>
 						<div id="earthexhow" style="display:none;"><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_1b.png" alt="earthexplorer howto"></div>
 						<div id="earthexhow2" style="display:none;"><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_1c.png" alt="earthexplorer howto2"></div>
-						<small>The USGS <a href="https://earthexplorer.usgs.gov/">Earth Explorer</a> contains the full Landsat repository and data from 
+						<figcaption>The USGS <a href="https://earthexplorer.usgs.gov/">Earth Explorer</a> contains the full Landsat repository and data from 
 							other NASA missions as well as the Sentinel-2 archive. Click image (2 steps) or <a href="#" id="earthex">here</a> for further instructions - searching for 
-							locations and download requires registration</small>
+							locations and download requires registration</figcaption>
 					</section>
 
 					<section id="022_ii">
 						<h2>02.2 <small>(ii)</small> Sentinel hub and playground</h2>
-						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_2.png" alt="sentinel playground">
-						<br>
-						<small>The so-called Sentinel <a href="http://apps.sentinel-hub.com/sentinel-playground">playground</a> that allows for real-time
-						data browsing and embedding of OGC services in GIS applications.</small>
+						
+						<figure><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_2.png" alt="sentinel playground">
+							<figcaption>The so-called Sentinel <a href="http://apps.sentinel-hub.com/sentinel-playground">playground</a> that allows for real-time
+							data browsing and embedding of OGC services in GIS applications.</figcaption>
+						</figure>
 					</section>
 
 					<section>
 						<h2>02.2 <small>(ii <i>cont.</i>)</small> Copernicus Open Access Hub</h2>
-						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_2b.png" alt="sentinel hub">
-						<br>
-						<small>The Copernicus <a href="https://scihub.copernicus.eu/">Open Access Hub</a> ... </small>
+						<figure>
+							<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_2b.png" alt="sentinel hub">
+							<figcaption>The Copernicus <a href="https://scihub.copernicus.eu/">Open Access Hub</a> ... </figcaption>
+						</figure>
 					</section>
 
 					<section id="022_iii">
@@ -872,9 +903,9 @@
 						<div id="commerchow" style="display:none;"><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_3b.png" alt="earthexplorer howto"></div>
 						<div id="commerchow2" style="display:none;"><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_3c.png" alt="earthexplorer howto2"></div>
 					
-						<small>The DigitalGlobe<a href="www.euspaceimaging.com/digitalglobe-archive"> ImageFinder</a> (left) provides the data archive for Worldview-2 and other 
+						<figcaption>The DigitalGlobe<a href="www.euspaceimaging.com/digitalglobe-archive"> ImageFinder</a> (left) provides the data archive for Worldview-2 and other 
 							VHR missions. The Airbus Space & Defence <a href="www.geo-airbusds.com/geostore/">GeoStore</a> (right) offers Pléiades 
-							images. Click image (2 steps) or <a href="#" id="commerc">here</a> for further instructions</small>
+							images. Click image (2 steps) or <a href="#" id="commerc">here</a> for further instructions</figcaption>
 					</section>
 
 					<section>
@@ -889,7 +920,7 @@
 								<li>Archive vs. tasking</li>
 								<li>Image quality (cloud coverage, incidence angle)</li>
 								<li>Window of acquisition / delivery mode</li></ul>
-								<p><small>An example of Airbus / Pléiades is shown on the right</small>
+								<p><figcaption>An example of Airbus / Pléiades is shown on the right</figcaption>
 							</td>
 							<td><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_4b.png" alt="Fig. 022_4b"></td></tr>
 						</table>
@@ -898,28 +929,35 @@
 
 					<section id="022_iv">
 						<h2>02.2 <small>(iv)</small> Google Earth Engine</h2>
+						<figure>
 						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_4.png" alt="Fig. 022_4">
-						<br><small><a href="https://earthengine.google.com/">Google Earth Engine</a> (GEE) is the flagship in cloud-based EO data processing. Over recent years, it has revolutionized
+						<figcaption><a href="https://earthengine.google.com/">Google Earth Engine</a> (GEE) is the flagship in cloud-based EO data processing. Over recent years, it has revolutionized
 							the way how satellite data are being processed, meaning it has shifted the paradigm of desktop image processing to cloud solution.
 							The image repository is enourmous and steadily growing and together with a toolbox (such as TimeLapse) and the palette of 
-							Python-based tools and scripts allows for an inspiring and easy-to-use data processing globally. NB: getting results out of the system is not as straight-forward.  </small>
+							Python-based tools and scripts allows for an inspiring and easy-to-use data processing globally. NB: getting results out of the system is not as straight-forward.  </figcaption>
+						</figure>
 					</section>
 
 					<section id="022_v">
 						<h2>02.2 <small>(v)</small> Proba-V mission exploitation platform</h2>
-						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_5.png" alt="Fig. 022_5">
-						<br><small>The <a href="https://proba-v-mep.esa.int/">Proba-V mission exploitation platform </a> (MEP) is a mission-specific data access platform for 
+						<figure>
+							<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_5.png" alt="Fig. 022_5">
+							<figcaption>The <a href="https://proba-v-mep.esa.int/">Proba-V mission exploitation platform </a> (MEP) is a mission-specific data access platform for 
 							the exploratory satellite Proba-V (V = Vegetation). Orginially designed for data access, it evolved to a widely usable 
 							cloud infrastructured for time-series analysis and spatially-constraint (i.e. polygon-based) paramater calculations, such as NDVI 
 							per country. Next to Proba-V also Sentinel-2 data are accessible. Pre-fabricated Jupyter notebooks are available for customized use.</small>
-					</section>
+							<figcaption>
+						</figure>		
+						</section>
 
 					<section id="022_vi">
 						<h2>02.2 <small>(vi)</small> Copernicus service platforms</h2>
 						<br>The fundamental objective of Copernicus is to support <em>policies, regulations, conventions, and directives</em> 
 						with a defined portfolio geospatial information services in the following areas:
-						<p><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_6.png" alt="Fig. 022_6"><br><small>The overall Copernicus structure including
-							data and services</small></p>
+						<figure>
+							<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_6.png" alt="Fig. 022_6">
+							<figcaption>The overall Copernicus structure including data and services (© XXX, Copyright Info)</figcaption>
+						</figure>
 					</section>
 
 					<section>
@@ -940,58 +978,71 @@
 								<li>Human security</li>
 							</ul></tr>
 						</table>
-						<br><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_6b.png" alt="Fig. 022_6b">
+						<figure><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_6b.png" alt="Fig. 022_6b">
+							<figcaption>(© XXX, Copyright Info)</figcaption>
+						</figure>
 					</section>
 
 					<section>
 						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_6t1.png">
 						<h2 style="color:#33cc80;">Land monitoring </h2>
 						<p>The Copernicus Land Monitoring service <a href="https://land.copernicus.eu">(CLMS)</a> aims at monitoring the Earth.</p>
-						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_6s1.png" alt="Fig. 022_6s1"><br>
-						<small>The four land monitoring service components</small>
+						<figure>
+							<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_6s1.png" alt="Fig. 022_6s1">
+							<figcaption>The four land monitoring service components (© XXX, Copyright Info)</figcaption>
+						</figure>
 					</section>
 
 					<section>
 						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_6t2.png">
 						<h2 style="color:#33adcc;">Ocean monitoring </h2>
 						<p>The Copernicus Marine Environment Monitoring service <a href="http://marine.copernicus.eu/services-portfolio/access-to-products">(CMEMS)</a> focuses on the global ocean.</p>
-						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_6s2.png" alt="Fig. 022_6s2"><br>
-						<small>The marine monitoring service portfolio</small>
+						<figure>
+							<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_6s2.png" alt="Fig. 022_6s2">
+							<figcaption>The marine monitoring service portfolio (© XXX, Copyright Info)</figcaption>
+						</figure>
 					</section>
 
 					<section>
 						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_6t3.png">
 						<h2 style="color:#33adcc8c;">Atmosphere monitoring </h2>
 						<p>The Copernicus Marine Environment Monitoring service <a href="https://atmosphere.copernicus.eu/catalogue#/">(CAMS)</a> focuses on the global ocean.</p>
-						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_6s3.png" alt="Fig. 022_6s3"><br>
-						<small>The atmosphere monitoring service portfolio</small>
+						<figure>
+							<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_6s3.png" alt="Fig. 022_6s3"><br>
+							<figcaption>The atmosphere monitoring service portfolio (© XXX, Copyright Info)</figcaption>
+						</figure>
 					</section>
 
 					<section>
 						<img height="50" src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_6t4.png">
 						<h2 style="color:#cc4533d3;">Climate change</h2>
 						<p>The Copernicus Climate Change service <a href="https://climate.copernicus.eu/about-c3s">(C3S)</a></p>
-						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_6s4.png" alt="Fig. 022_6s4"><br>
-						<small>The C3S key products and services. See also the <a href="https://climate-adapt.eea.europa.eu/">Climate Adapt</a> platform of the European
-						Environment Agency (EEA)</small>
+						<figure>
+							<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_6s4.png" alt="Fig. 022_6s4"><br>
+							<figcaption>The C3S key products and services. See also the <a href="https://climate-adapt.eea.europa.eu/">Climate Adapt</a> platform of the European
+						Environment Agency (EEA) (© XXX, Copyright Info)</figcaption>
+						</figure>
 					</section>
 					
 					<section>
 						<img height="50" src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_6t5.png">
 						<h2 style="color:#caae60b9;">Emergency management</h2>
 						<p>The Copernicus Emergency Management service <a href="https://emergency.copernicus.eu/">(CEMS)</a>  </p>
-						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_6s5.png" alt="Fig. 022_6s5"><br>
-						<small>The emergency management service portfolio</small>
+						<figure>
+							<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_6s5.png" alt="Fig. 022_6s5"><br>
+							<figcaption>The emergency management service portfolio (© XXX, Copyright Info)</figcaption>
+						</figure>
 					</section>
 					
 					<section>
 						<img width="50%" src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_6t6.png">
 						<h2 style="color:#33adcc49;">Human security</h2>
 						<p>The Copernicus Security service contains of three subservices, (1) Maritime surveillance, (2) Border surveillance and the (3) support to 
-							European<a href="https://sea.security.copernicus.eu/">External Action (SEA)</a>  </p>
-						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_6s6.png" alt="Fig. 022_6s6"><br>
-						<small>The security SEA service</small>
-						<br>
+							European<a href="https://sea.security.copernicus.eu/"> External Action (SEA)</a>  </p>
+						<figure>
+							<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_6s6.png" alt="Fig. 022_6s6"><br>
+							<figcaption>The security SEA service (© XXX, Copyright Info)</figcaption>
+						</figure>
 					</section>
 
 					<section>
@@ -1002,14 +1053,17 @@
 							<li style="color:#c5b2ca8f;">Service providers</li>
 							<li style="color:#cc5733;">Users and stakeholders</li>
 						</ul>
-						<p><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_5c.png" alt="Fig. 022_5c"><br>
-						<small>A subset of the Copernicus ecosystem</small>
+						<figure>
+							<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_5c.png" alt="Fig. 022_5c"><br>
+							<figcaption>A subset of the Copernicus ecosystem</figcaption>
+						</figure>
 					</section>
+
 					<section>
 						<h2 style="color:#bbb7a8;">Data providers</h2>
 						<p>Next to the Sentinel satellites there is a series of contributing missions, including commercial providers of very high (spatial) resolution (VHR)  data.</p>
 						<p><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/022_5d.png" alt="Fig. 022_5d"><br>
-							<small>Copernicus contributing missions - the example of Worldview-2</small>
+							<figcaption>Copernicus contributing missions - the example of Worldview-2 (© XXX, Copyright Info)</figcaption>
 						<p style="color:#cc5733;">Include the example of Planet and Skysat (completion of constellation such that every location on 
 						Earth is visible by 7 satellites)</p>
 					</section>
@@ -1046,12 +1100,14 @@
 					<section>
 						<h1>03.1 | Image data model</h1> 
 						<h2>Learning objectives [lesson 3.1]</h2><p> 
+						<ul>
 							<li><em>Understand the specifics of image data as a special case of raster data</em></li>
 							<li><em>Familiarize with top-view characteristics of image data as well as the 
 								difference between panchromatic and multispectral images</em></li>
 							<li><em>Learn to distinguish between different resolution types</em></li>
 							<li><em>Learn how to use spectral profiles as an analysis tool</em></li>
 							<li><em>Understand different image storage strategies</em></li>
+						</ul>
 					</section>
 	
 					<section>
@@ -1074,9 +1130,10 @@
 						<p>Image data are a specific type of raster data representing a subset of the Earth's surface by
 							 recording the continous phenomenon of <strong>radiation reflectance</strong>. Image data are captured by sensors mounted on different platforms, such as 
 							ballons, drones, aircrafts, and satellites.</p>	
-						<br><img width=80% height=80% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/031_1a.png" alt="Fig. 031_1a">
-						<br><small>From oblique view to top-view (Photos: S. Lang)</small></p>	
-						
+						<figure>
+							<img width=80% height=80% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/031_1a.png" alt="Fig. 031_1a">
+							<figcaption>From oblique view to top-view (© Photos: S. Lang)</figcaption>	
+						</figure>
 					</section>
 
 					<section>
@@ -1087,8 +1144,9 @@
 					<section>
 						<h2>03.1 <small>(iii)</small> Resolution types</h2> 
 						<p>There are four different resolution types: <strong>spectral, spatial, radiometric, temporal resolution</strong></p>	
-						<br><img width=80% height=80% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/031_1b.png" alt="Fig. 031_1b">
-						<br><small>Pléiades image of the city of Salzburg with 0.5m spatial resolution</small></p>	
+						<figure><img width=80% height=80% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/031_1b.png" alt="Fig. 031_1b">
+						<figcaption>Pléiades image of the city of Salzburg with 0.5m spatial resolution</figcaption>
+						</figure></p>	
 					</section>
 
 					<section>
@@ -1101,8 +1159,10 @@
 						<h2>03.1 <small>(v)</small> Panchromatic vs. multi-band images, feature space</h2> 
 						<p>How are multiband image data organised?
 						<br>Satellite imagery consists of several co-registered pixel arrays (image matrix) representing a combination of different spectral bands. The visual effect of this combination can be interpreted by humans or machines.
-						<br><img width=50% height=50% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/4_multiband.jpg" alt="multiband">
-						<br><small>Sentinel-2 MSI (near the city of Geislingen) 20 Aug 2018</small></p>	
+						<figure>
+							<img width=50% height=50% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/4_multiband.jpg" alt="multiband">
+							<figcaption>Sentinel-2 MSI (near the city of Geislingen) 20 Aug 2018</figcaption></p>	
+						</figure>
 						<p style="color: red;">[What do the colours mean? Show some example including Sentinel-2 (ocean 'colour' 
 							caused by phytoplankton)]</p>
 					</section>
@@ -1110,16 +1170,20 @@
 					<section id="031_vi">
 						<h2>03.1 <small>(vi)</small> Spectral profiles</h2> 
 						<p>Spectral profiles help determine the spectral properties of a given pixel (i.e., at a specific location) </p>	
+						<figure>
 						<img width=80% height=80% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/031_6.png" alt="Fig 031_6">
-						<small>A spectral profile of a selected pixel showing the DNs of the sequential Landsat-8 bands</small>
+						<figcaption>A spectral profile of a selected pixel showing the DNs of the sequential Landsat-8 bands (© XXX, Copyright Info)</figcaption>
+						</figure>
 					</section>
 
 					<section id="031_vii">
 						<h2>03.1 <small>(vii)</small> Storage options</h2> 
 						<p>There are different  options for storing multi-band images, band-interleaved by line (<strong>BIL</strong>), band-interleaved by pixel (<strong>BIP</strong>), 
 							and band sequential (<strong>BSQ</strong>) </p>	
-						<img width=80% height=80% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/031_7.png" alt="Fig 031_7">
-						<small>Different storage options BIL, BIP, and BSQ</small>
+						<figure>
+							<img width=80% height=80% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/031_7.png" alt="Fig 031_7">
+							<figcaption>Different storage options BIL, BIP, and BSQ (© XXX, Copyright Info)</figcaption>
+						</figure>
 					</section>
 
 				</section>

@@ -9,10 +9,11 @@ hidd/**
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
   color: #fff; }
 
+ 
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
-body {
+ body {
 	/*content: url(../../images/eo4geocourses_logo.png);
 	text-align: center;*/
   background: #fff;
@@ -23,8 +24,38 @@ body {
   left: 10px;; font-size: 0.8em; }  
   
 citation {
-  font-style: italic ; font-size: 0.8em; }
   
+  font-style: italic ; font-size: 0.5em; 
+  /*writing-mode: vertical-lr;
+  text-orientation: sideways;
+  transform: rotate(180deg);*/
+}
+ 
+/* CAPTIONS: https://www.w3schools.com/tags/tag_figcaption.asp */
+figure {
+  border: 0px #cccccc solid;
+  padding: 2px;
+  margin: auto;
+}
+
+figcaption {
+  font-size: 14px;
+  background-color: white;
+  color: black;
+  font-style: italic;
+  padding: 0px;
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 50%;*/
+}
+
+
+
   .eo4geologo
 {
 
