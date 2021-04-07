@@ -1219,8 +1219,10 @@
 						<h3>Histograms</h3>
 						<p>What is a histogram? A histogram is a <strong> statistical chart</strong> technique providing a compact overview of the data 
 						in an image than knowing the exact value of every pixel. </p>
-						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/032_1.png" alt="032_1">
-	
+						<figure>
+							<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/032_1.png" alt="032_1">
+							<figcaption>(© XXX, Copyright Info)</figcaption>
+						</figure>
 					</section>
 
 					<section id = "032_ii">
@@ -1228,9 +1230,10 @@
 						BoK_URI="https://bok.eo4geo.eu/IP1-4-2"" 
 						/> 
 						<h2>03.2 <small>(ii)</small> Interpretation of histograms</h2> 
-						
-						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/032_2.png" alt="032_2">
-						<small>How to interpret different types histograms?</small>
+						<figure>
+							<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/032_2.png" alt="032_2">
+							<figcaption>How to interpret different types histograms? (© XXX, Copyright Info) </figcaption>
+						</figure>
 					</section>
 
 					<section id = "032_iii">
@@ -1267,9 +1270,11 @@
 					<section>
 						<h1>04.1 | Sensors and metadata</h1> 
 						<h2>Learning objectives [lesson 4.1]</h2><p> 
+						<ul>
 							<li><em>Learn what typical metadata are produced by satellite imagery</em></li>
 							<li><em>Understand how metadata of image collections (e.g. Sentinel-2) can be used 
 								to better understand the availabilty and quality of satellite data</em></li>
+						</ul>
 					</section>
 	
 					<section>
@@ -1287,18 +1292,22 @@
 						<h3 style="color:gray;">Typical features of HR vs. VHR sensors</h3>
 						<p>Using the examples of two representatives of the <b>high-resolution (HR)</b> optical satellites family (Landsat-8 & Sentinel-2) 
 						and a <b>VHR satellite</b> (Worldview-2) </p>
-						<img width=80% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/041_1.png" alt="Fig. 041_1">
-						<small>Sensor characteristcs Sentinel-2 vs. Landsat-8. See <a href="https://earth.esa.int/web/sentinel/user-guides/sentinel-2-msi/overview">link</a>.</small>				
-
+						<!--@Stefan: you mention HR and VHR (Wordview), but worldview is not introduced here?-->
+						<figure>
+							<img width=80% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/041_1.png" alt="Fig. 041_1">
+							<figcaption>Sensor characteristcs Sentinel-2 vs. Landsat-8. See <a href="https://earth.esa.int/web/sentinel/user-guides/sentinel-2-msi/overview">link</a>.</figcaption>				
+						</figure>
 					</section>
 
 					<section id= 041_ii>
 						<h2>04.1 <small>(ii)</small> Satellite image metadata analysis</h2> 
 						<h3 style="color:gray;">The EO Compass</h3>
 						<p>A stand-alone webtool to understand the global coverage and quality of Sentinel-2 image acquisition based on image metadata analysis. </p>
+						<figure>	
 							<img width=80% height=80% src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/041_2.png" alt="Fig. 041_2">	
-							<br><small><a href="http://eo-compass.zgis.at">EO Compass</a> (Sudmanns et al., 2019) | (c) Z_GIS</small>	
-					</section>
+							<br><figcaption><a href="http://eo-compass.zgis.at">EO Compass</a> (Sudmanns et al., 2019) | © Z_GIS</figcaption>	
+						</figure>
+						</section>
 
 				</section>
 
@@ -1309,8 +1318,10 @@
 					<section>
 						<h1>04.2 | Image handling</h1> 
 						<h2>Learning objectives [lesson 4.2]</h2><p> 
+							<ul>
 							<li><em>Practice the handling of image data in dedicated software environment </em></li>
 							<li><em>Learn how to use the <em>ArcGIS Pro</em> Image Analysis module</em></li>
+							</ul>
 					</section>
 	
 					<section>
@@ -1351,9 +1362,11 @@
 					<section>
 						<h1>04.3 | Band combinations</h1> 
 						<h2>Learning objectives [lesson 4.3]</h2><p> 
+						<ul>
 							<li><em>Understand how to visualise, manipulate, and interact with, image data </em></li>
 							<li><em>Learn what general principles apply when interpretating them (including change of band combinations)</em></li>
-					</section>
+						</ul>
+						</section>
 		
 					<section>
 						<h1>04.3 | Band combinations</h1>
@@ -1370,8 +1383,10 @@
 						<h2>04.3 <small>(i)</small> Visualising image data</h2> 
 						<h3 style="color:gray;">What do the colours mean?</h3>
 						<p>Going back to the <a href="#/11/0">starting</a> slide of this unit, we can see a scene which is dominated by red tones.</p>
+						<figure>	
 							<img width=80% height=80% src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/043_1.png" alt="Fig. 043_1">	
-							<br><small>Different band combinations are used for specific analytical purposes</small>	
+							<br><figcaption>Different band combinations are used for specific analytical purposes (© XXX, Copyright Info)</figcaption>	
+						</figure>
 					</section>	
 
 					<section id= 043_ii>
@@ -1412,10 +1427,12 @@
 					<section>
 						<h1>05.1 | Spatial referencing</h1> 
 						<h2>Learning objectives [lesson 5.1]</h2><p> 
+						<ul>
 							<li><em>Understand the general rationale for spatial referencing and geometric correction</em></li>
 							<li><em>Learn the purpose of orthorectification and georeferencing</em></li>
 							<li><em>Understand geodetic and geometric principles as well as the process of 
 								(mathematical) transformation and (technical) resampling</em></li>
+						</ul>
 					</section>
 	
 					<section>
@@ -1455,23 +1472,29 @@
 							(internal orientation, depending on camera or sensor calibration). The latter is of 
 							particular importance for <b>VHR satellite images</b> or air photos. </p>
 						<p><b>Resampling</b> is the actual process of re-calculating an image matrix during geometric correction.</p>
-
-							<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/051_2.png"><br><small>(screenshot taken from EO4GEO BoK in the EO*GI sector)</small>
-					</section>
+						<figure>
+							<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/051_2.png" style="position:relative;width:380px; height:300px";><br>
+							<figcaption> screenshot taken from EO4GEO BoK in the EO*GI sector<a href="https://bok.eo4geo.eu/IP1-3"> BoK visualization and search Tool</a></figcaption>
+						</figure>
+						</section>
 
 					<section>
 						<h2>05.1 <small>(iii)</small> How to obtain real-world coordinates?</h2> 
 						<p>You can obtain real-world coordinates (lat-long [DMS/DD] or metric) from various sources including <b>field visits</b> (GNSS 
 							measurements), <b>Google Maps</b>, <b>Online map portals</b> (e.g. <a href="http://www.austrianmap.at/">Austrian Map</a>), or any 
 							other <b>co-registered image</b> (see next slide).
-						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/051_3.png" alt="src coord"><br><small>Sources of real-world coordinates</small>
+						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/051_3.png" alt="src coord">
+						<figcaption>Sources of real-world coordinates (© S. Lang, PLUS)</figcaption>
 					</section>
 
 					<section>
 						<h2>05.1 <small>(iii cont.)</small> How to obtain real-world coordinates?</h2> 
 						<p>On-the-fly projection (e.g. in <em>ArcGIS Pro</em>), only if spatial reference information exists.</p>
 						<p>Image co-registration requires well registered reference image in appropriate resolution</p>
-						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/051_3b.png" alt="img coreg"><br><small>Image-to-image coregistration of different sensors</small>
+						<figure>
+							<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/051_3b.png" alt="img coreg">
+							<figcaption>Image-to-image coregistration of different sensors (© xxx/ xxx)</figcaption>
+						</figure>
 					</section>
 
 					<section>
@@ -1479,7 +1502,10 @@
 						<p>The <b>geometric quality</b> of an image (pre-registration) depends on the <b>purpose</b>. The pre-registered <em>level 1c / 1g</em> products of 
 							Landsat-8 or Sentine-2 are usually sufficient for a typical 'Landsat-like' application case. 
 						</p>	
-						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/051_3c.png" alt="geom qual"><br><small>Spatial accuracy of Sentinel-2 and Landsat-8 imagery</small>
+						<figure>
+							<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/051_3c.png" alt="geom qual">
+							<figcaption>Spatial accuracy of Sentinel-2 and Landsat-8 imagery</figcaption>
+						</figure>
 					</section>
 
 					<section>
@@ -1489,8 +1515,11 @@
 							Realized using sensor models (RPC) and differential rectification with DGM
 							Prerequisite: ‘Ortho-Ready‘ products
 							Interpolation of elevation over pixel and re-calculation into image matrix</p>
-							<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/051_4.png" alt="ortho"><br><small>Components for ortho-rectification</small>			
-					</section>
+							<figure>
+								<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/051_4.png" alt="ortho">
+								<figcaption>Components for ortho-rectification (© xxx/ xxx)</figcaption>			
+							</figure>
+						</section>
 
 					<section>
 						<h2>05.1 <small>(v)</small> Geodetic principles, projections</h2> 
@@ -1511,8 +1540,10 @@
 					<section>
 						<h1>05.2 | GCP collection and referencing</h1> 
 						<h2>Learning objectives [lesson 5.2]</h2><p> 
+						<ul>
 							<li><em>Practice the procedure of GCP collection and spatial referencing in the software environmen</em></li>
-							<li><em>Learn how to assess and improve the quality of the result</em></li> 
+							<li><em>Learn how to assess and improve the quality of the result</em></li>
+						</ul> 
 					</section>
 		
 					<section>
@@ -1550,8 +1581,10 @@
 					<section>
 						<h1>06.1 | Radiometric measurement<h1> 
 						<h2>Learning objectives [lesson 6.1]</h2><p> 
+						<ul>
 							<li><em>Understand the concept of radiometric resolution </em></li>
 							<li><em>Differentiate the terms reflectance and radiance, and understand the concept of image calibration </em></li>
+						</ul>
 						</section>
 
 					<section>
@@ -1570,10 +1603,12 @@
 						<p>The principle of <strong>quantisation</strong> is the transformation of a continous brightness range according to a specfied sampling distance, 
 							the so-called <strong>ground sample distance</strong> (GSD). The <strong>radiometric resolution</strong>
 						corresponds to the number of quantisation levels. </p>
-						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/061_1.png" alt"061_1">
-						<small>In an 8-bit image we have digital numbers ranging from 0 ... 255. This corresponds to (2^8=) 256 quantisation levels 
-							and a radiometric resolution of <b>8-bit</b> (see histograms).</small>
+						<figure>
+						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/061_1.png" alt="061_1" style="width:500px;height:400px;">>
+						<figcaption>In an 8-bit image we have digital numbers ranging from 0 ... 255. This corresponds to (2^8=) 256 quantisation levels 
+							and a radiometric resolution of <b>8-bit</b> (see histograms).  (© S. Lang, PLUS/xxx)</figcaption>
 							<!-- Image enhancement for visualisation purposes including contrast stretching -->
+						</figure>
 					</section>
 
 					<section>
@@ -1581,32 +1616,38 @@
 						<p>Depending on the radiometric resolution (quantisation levels), image calibration converts digital numbers (DN) into 
 							physical units of measurement (<strong>spectral radiance</strong>)
 						</p>
+						<figure>
 							<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/061_2.png">
-							<small>Image calibration makes image data comparable.</small>							
+							<figcaption>Image calibration makes image data comparable  (© S. Lang, PLUS/xxx)</figcaption>	
+						</figure>							
 					</section>
 
 					<section>
 						<h2>06.1 <small>(ii <i>cont.</i>)</small> Image calibration (radiance vs. reflectance)</h2> 
 						<p>The general workflow of <strong>radiometric image enhancement</strong> contains radiometric calibration and radiometric correction. 
 						Radiometric correction can be separated in <strong>atmospheric correction</strong> and <strong>topographic correction</strong>.</p>
-					 	<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/061_2b.png">
-						<br><small>Figure: F. Albrecht, Z_GIS</small>
-						
+					 	<figure>
+							<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/061_2b.png">
+						<figcaption>(© F. Albrecht, Z_GIS/xxx)</figcaption>
+						</figure>
 					</section>
 
 					<section>
 						<h2>06.1 <small>(ii <i>cont.</i>)</small> Image calibration (radiance vs. reflectance)</h2> 
 						<p>Image calibration converts digital numbers into radiance at the sensor.</p>
 						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/061_2c.png">
-						<br><small>Spectral radiance as measured by a spectroradiometer</small>
-						
+						<figure>
+						<figcaption>Spectral radiance as measured by a spectroradiometer (© xxx/xxx)</figcaption>
+						</figure>
 					</section>
 
 					<section>
 						<h2>06.1 <small>(iii)</small> Atmospheric correction</h2> 
 						<p>Atmospheric correction is a part of radiometric correction compensating for interactions of electromagnetic radiation with gas absorption and aerosol scattering in the atmosphere. </p>
-						<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/061_3.png">
-						<br><small>Several steps are involved with the final goal to achieve surface reflectance values (reflectance on the ground).</small>	
+						<figure>
+							<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/061_3.png" style="width:790px;height:450px;">
+							<figcaption>Several steps are involved with the final goal to achieve surface reflectance values (reflectance on the ground). (© xxx/xxx)</figcaption>	
+						</figure>
 					</section>
 
 				</section>
@@ -1626,9 +1667,11 @@
 						<h1>06.2 | Atmospheric correction</h1>
 						<h2>Content and topics [lesson 6.2]</h2><p>  
 						<table>
+							<ul>
 							<tr><td>#</td><td>Content</td><td><b>BoK concept</b></td></tr>
 							<tr><td>i</td><td>Top-of-atmosphere correction</td><td><a href="https://bok.eo4geo.eu/IP1-7-3-1"><small>Converting DN to TOA reflectance</small></a></td></tr>
 							<tr><td>ii</td><td>Surface correction</td><td>*</td></tr>
+						</ul>
 						</table>
 					</section>
 
@@ -1653,9 +1696,11 @@
 
 					<section>
 						<h1>06.3 | Topographic correction</h1> 
-						<h2>Learning objectives [lesson 6.3]</h2><p> 
+						<h2>Learning objectives [lesson 6.3]</h2><p>
+						<ul> 
 							<li><em>Understand the routine of topographic image correction</em></li>
 							<li><em>Get an overview of different techniques </em></li>
+						</ul>
 					</section>
 
 					<section>
@@ -1726,8 +1771,10 @@
 					<section>
 						<h1>07.1 | Band maths<h1> 
 						<h2>Learning objectives [lesson 7.1]</h2><p> 
+						<ul>
 							<li><em>Understand the purpose of arithmetic band combinations</em></li>
 							<li><em>Learn how to interpret index values (such as NDVI, NDSI) and their ranges</em></li>
+						</ul>
 					</section>
 	
 					<section>
@@ -1750,9 +1797,11 @@
 					<section id="072_0">
 						<h1>07.2 | Filtering</h1> 
 						<h2>Learning objectives [lesson 7.2]</h2><p> 
+						<ul>
 							<li><em>Understand the principle of contextual focal analysis of images using convolution kernels</em></li>
 							<li><em>Learn how to apply pre-defined filtering routines for dedicated purposes (sharpening, smoothing, edge detection, etc.)</em></li>
 							<li><em>Get an idea how filters are used for convolutional neural networks (CNNs) </em></li>
+						</ul>
 					</section>
 	
 					<section>
@@ -1777,8 +1826,10 @@
 					<section>
 						<h1>07.3 | Image fusion & PCA</h1> 
 						<h2>Learning objectives [lesson 7.3]</h2><p> 
+						<ul>
 							<li><em>Understand the principle of image fusion</em></li>
 							<li><em>Learn how to perform pan-sharpening techniques (e.g. Gram-Schmid)</em></li>
+						</ul>
 					</section>
 		
 					<section>
@@ -1813,10 +1864,12 @@
 
 					<section id="081_0">
 						<h1>08.1 | Multi-spectral classification</h1> 
-						<h2>Learning objectives [lesson 8.1]</h2><p> 
+						<h2>Learning objectives [lesson 8.1]</h2><p>
+						<ul>
 							<li><em>Understand the purpose of multi-spectral image classification</em></li>
 							<li><em>Comprehend the difference between supervised and non-supervised classification</em></li>
 							<li><em>Get to know different classifiers and how they work</em></li>
+						</ul> 
 					</section>
 	
 					<section>
@@ -1843,10 +1896,11 @@
 							includes:
 						</p>
 						<ul style="color:gray;"><li>...  </li>
-						<li>...</li>
-						<li>...</li>
-						<li>...</li>
-						<li>...</li></ul>.
+							<li>...</li>
+							<li>...</li>
+							<li>...</li>
+							<li>...</li>
+						</ul>.
 					</section>
 
 					<section id="081_ii">
@@ -1865,9 +1919,11 @@
 					<section>
 						<h1>08.2 | Supervised classification</h1> 
 						<h2>Learning objectives [lesson 8.2]</h2><p> 
-							<li><em>Learn how to conduct the image classification workflow in ArcGIS Pro</em></li>
-							<li><em>Practice the collection of samples, the creation of a classification scheme 
-								and the selection of a suitable classifier</em></li> 
+							<ul>
+								<li><em>Learn how to conduct the image classification workflow in ArcGIS Pro</em></li>
+								<li><em>Practice the collection of samples, the creation of a classification scheme 
+								and the selection of a suitable classifier</em></li>
+							</ul> 
 					</section>
 		
 					<section>
@@ -1905,8 +1961,10 @@
 					<section>
 						<h1>09.1 | Ground reference & accuracy assessment</h1> 
 						<h2>Learning objectives [lesson 9.1]</h2><p> 
+						<ul>
 							<li><em>Understand the meaning of accuracy assessment and how it is performed</em></li>
 							<li><em>Know what post-process routines exist to improve results</em></li>
+						</ul>
 					</section>
 	
 					<section>
@@ -1931,8 +1989,10 @@
 					<section>
 						<h1>09.2 | Product validation</h1> 
 						<h2>Learning objectives [lesson 9.2]</h2><p> 
+							<ul>
 							<li><em>Discuss the quality and usabilty of a classification product 
 								(and potentially a map generated out of it)</em></li>
+							</ul>
 					</section>
 		
 					<section>
@@ -1968,8 +2028,10 @@
 					<section>
 						<h1>10.1 | Geodata integration</h1> 
 						<h2>Learning objectives [lesson 10.1]</h2><p> 
+						<ul>
 							<li><em>Combine image data and with other layers from geodata infrastructures</em></li>
 							<li><em>Understand the importance of proper spatial referencing</em></li>
+						</ul>
 					</section>
 	
 					<section>
@@ -1993,8 +2055,10 @@
 					<section>
 						<h1>10.2 | Map making</h1> 
 						<h2>Learning objectives [lesson 10.2]</h2><p> 
+						<ul>
 							<li><em>Create a map in the appropriate scale to the image resolution and classification depth</em></li>
-					</section>
+						</ul>
+						</section>
 	
 					<section>
 						<h1>10.2 | Map making</h1>
