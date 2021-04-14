@@ -7,7 +7,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Image Processing & Analysis</title>
+		<title>Remote Sensing & Image Processing</title>
 		
 		<meta property="dc:title" content="Practice: image processing and analysis" />
 		<meta property="dc:creator" content="Stefan Lang" /> 
@@ -95,9 +95,9 @@
 					
 						});
 					</script>
-					<h1>Image Processing & Analysis</h1>
+					<h1>Remote Sensing &<br> Image Processing</h1>
 					<h2>Exercise course [UE] - 655.352</h2>
-					<em>Prof Dr Stefan LANG</em><p>
+					<em>Assoc-Prof Dr Stefan LANG</em><p>
 					
 					<a href="#" id="title"><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/cover2o.png" alt="title2 start"></a>
 					<div id="titlelight" style="display:none;"><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/cover2.png" alt="title2"></div>
@@ -281,7 +281,7 @@
 
 				<section>
 					<h1 id="u1">01 | Organisation and introduction</h1>
-					<h2><b>Image Processing & Analysis</b></h2>
+					<h2><b>Remote Sensing & Image Processing</b></h2>
 					<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/U1.png" alt="U1 image"><br>
 					<a href="#/1/1">
 						<img data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/arrow_toc.png" alt="ToC arrow">
@@ -344,21 +344,13 @@
 
 					<section id= 011_iii>
 						<h2>01.1 <small>(iii)</small> Course schedule and syllabus</h2> 
-							This course takes place <em>Wednesdays, 16.00 - 18.00</em> in the <b>GI Lab</b>. Press "show schedule" for more details
+						<h3>Time and place</h3>  
+							<p>This course takes place <em>Wednesdays, 16.00 - 18.00</em> in the <b>GI Lab</b>. Press "show schedule" for more details
 							on the current syllabus and schedule for this semester. Updates or any occuring changes you may find in
 							<a href= "https://online.uni-salzburg.at/plus_online/wbLv.wbShowLVDetail?pStpSpNr=480447">PlusOnline</a>.<p>   
-							<img width=600 height=360 src ="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/011_3.png" alt="Time plan">	
-							<p>Depending on the Covid-19 regulations, the course is offered in hybrid or online mode. 
-							<ul><li>Challenges</li>
-								<ul><li>No face-to-face contact, harder to get to know each other </li>
-								<li>Difficult to interact, raise questions, contribute to discussions</li></ul>
-							</li>Benefits</li>
-								<ul><li>Testing new ways of blended learning, flipped classroom settings, online material, etc.</li>
-								<li>Option to revisit recorded sessions (if provided)</li>
-								<li>Pre- and after-class sessions open for clarifications, side questions, etc.</li></ul>
-							</ul>
-
-						
+							<img width=600 height=280 src ="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/011_3.png" alt="Time plan">	
+							<br>Depending on the <a href="https://im.sbg.ac.at/spaces/viewspace.action?key=CORONAINFOS">Covid-19 regulations</a>, the course is offered in hybrid or online mode.</p> 
+										
 							<p><button id="btn">Show schedule</button>	 
 							<div id="syllabus"></div>
 						
@@ -512,7 +504,7 @@
 							or more. The data collected from a distance are termed <b>remotely sensed data</b>." (Stan Aronoff,  1989)
 						</blockquote>
 
-							<p><img data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/012_1.png" alt="Fig. 012_1">
+							<br><img data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/012_1.png" alt="Fig. 012_1">
 							<br><small>Our ancestors practiced remote sensing from hills or trees</small>	
 					</section>
 					
@@ -524,7 +516,7 @@
 								<li>Satellite <b>communication</b></li>
 								<li>Satellite / <b>Earth observation (EO)</b></li>
 							</ul>
-							<p><img data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/012_2.png" alt="Fig. 012_2">
+							<br><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/012_2.png" alt="Fig. 012_2">
 								<br><small>The three components of space assets. Combining (at least) two out of three is termed Integrated applications
 									by ESA</small>	
 					</section>
@@ -1046,12 +1038,12 @@
 					<section>
 						<h1>03.1 | Image data model</h1> 
 						<h2>Learning objectives [lesson 3.1]</h2><p> 
-							<li><em>Understand the specifics of image data as a special case of raster data</em></li>
-							<li><em>Familiarize with top-view characteristics of image data as well as the 
-								difference between panchromatic and multispectral images</em></li>
-							<li><em>Learn to distinguish between different resolution types</em></li>
-							<li><em>Learn how to use spectral profiles as an analysis tool</em></li>
-							<li><em>Understand different image storage strategies</em></li>
+							<ul><li><p><i>Understand the specifics of image data as a special case of raster data</i></p></li>
+							<li><p><i>Familiarize with top-view characteristics of image data as well as the 
+								difference between panchromatic and multispectral images</i></p></li>
+							<li><p><i>Learn to distinguish between different resolution types</i></p></li>
+							<li><p><i>Learn how to use spectral profiles as an analysis tool</i></p></li>
+							<li><p><i>Understand different image storage strategies</i></li></p></ul>
 					</section>
 	
 					<section>
@@ -1074,37 +1066,39 @@
 						<p>Image data are a specific type of raster data representing a subset of the Earth's surface by
 							 recording the continous phenomenon of <strong>radiation reflectance</strong>. Image data are captured by sensors mounted on different platforms, such as 
 							ballons, drones, aircrafts, and satellites.</p>	
-						<br><img width=80% height=80% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/031_1a.png" alt="Fig. 031_1a">
+						<br><img width=80% height=80% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/031_1a.png" alt="Fig. 031_1">
 						<br><small>From oblique view to top-view (Photos: S. Lang)</small></p>	
 						
 					</section>
 
 					<section>
 						<h2>03.1 <small>(ii)</small> Vector vs. raster data representation</h2> 
-						<p>Vector vs. raster  ... </p>	
-					</section>
+						<p>Vector data are used to represent <i>spatial discreta</i>, while raster data are the appropriate data model for <i>spatial continua</i>.</p>
+						<img width=80% height=80% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/031_2.png" alt="Fig. 031_2">
+						<br><small>Object-based image analysis (OBIA) has been developed to bridge between continous observations and object representations.
+						</small></p>	
+					</section>	
 
 					<section>
 						<h2>03.1 <small>(iii)</small> Resolution types</h2> 
-						<p>There are four different resolution types: <strong>spectral, spatial, radiometric, temporal resolution</strong></p>	
-						<br><img width=80% height=80% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/031_1b.png" alt="Fig. 031_1b">
-						<br><small>Pléiades image of the city of Salzburg with 0.5m spatial resolution</small></p>	
+						<p>There are four different resolution types: <b>spectral, spatial, radiometric, temporal </b>resolution</p>	
+						<br><img width=80% height=80% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/031_3.png" alt="Fig. 031_3">
+						<br><small>Pléiades image of the city of Salzburg with 0.5m spatial resolution.</small></p>	
 					</section>
 
 					<section>
 						<h2>03.1 <small>(iv)</small> Image matrix and image regions</h2> 
-						<p>Data model ... </p>
-						<p style="color: red;">[brief hint to spatial autocorrelation, small excercise in Jupyter?]</p>	
+						<p>An image matrix (or pixel array) is defined by (i) <b>coordinates of origin</b>, (ii) <b>resolution</b> (pixel size), (iii) <b>extent</b> (dimension)</p>
+						<img width=80% height=80% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/031_4.png" alt="Fig. 031_4">
+						<br><small>Image matrix as defined by origin, resolution, extent (left). Image regions as defined by pixel similarity (right) </small></p>
 					</section>
 					
 					<section>
 						<h2>03.1 <small>(v)</small> Panchromatic vs. multi-band images, feature space</h2> 
-						<p>How are multiband image data organised?
-						<br>Satellite imagery consists of several co-registered pixel arrays (image matrix) representing a combination of different spectral bands. The visual effect of this combination can be interpreted by humans or machines.
-						<br><img width=50% height=50% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/4_multiband.jpg" alt="multiband">
-						<br><small>Sentinel-2 MSI (near the city of Geislingen) 20 Aug 2018</small></p>	
-						<p style="color: red;">[What do the colours mean? Show some example including Sentinel-2 (ocean 'colour' 
-							caused by phytoplankton)]</p>
+						<p>Satellite imagery consists of several co-registered pixel arrays representing a <b>combination</b> of different spectral bands. </p>
+						<img width=90% height=90% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/031_5.png" alt="Fig. 031_5">
+						<br><small>The visual effect of combining different spectral bands can be interpreted by humans or machines in order to derive semantic information (e.g. land cover classes).</small></p>	
+
 					</section>
 
 					<section id="031_vi">
@@ -1131,8 +1125,8 @@
 					<section>
 						<h1>03.2 | Histograms</h1> 
 						<h2>Learning objectives [lesson 3.2]</h2><p> 
-							<li><em>Understand the frequency distribution of pixels in images</em></li>
-							<li><em>Learn how to generate and to read histograms</em></li>
+							<ul><li><p><i>Understand the frequency distribution of pixels in images</p></i></li>
+							<li><p><i>Learn how to generate and to read histograms</p></i></li>
 					</section>
 	
 					<section>
@@ -1255,27 +1249,22 @@
 						<table>
 							<tr><td>#</td><td>Content</td><td><b>BoK concept</b></td></tr>
 							<tr><td><a href="#042_i">i</a></td><td><em>ArcGIS Pro</em> Image Analysis module</td><td><small>*</small></td></tr>
-							<tr><td><a href="#042_ii">ii</a></td><td>Components and GUI, linking viewers</td><td><small>*</small></td></tr>
-							<tr><td><a href="#043_iii">iii</a></td><td>Organising and loading image data</td><td><small>*</small></td></tr>
+							<tr><td><a href="#042_ii">ii</a></td><td>Organising and loading image data</td><td><small>*</small></td></tr>
+							
 						</table>
 					</section>
 
 					<section id="042_i">
 						<h2>04.1 <small>i</small> ArcGIS Pro Image Analysis module</h2> 
 						<h3 style="color:gray;">Visualising images in <em>ArcGIS Pro</em></h3>
-						[add sequence Generic *04 sl 14ff]
+						<img width=100% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/042_1.png" alt="Fig. 042_1">
+						
 					</section>
 
 					<section id="042_ii">
-						<h2>04.1 <small>ii</small> Components and GUI, linking viewers</h2> 
-						<h3 style="color:gray;">GUI elements</h3>
-						[add sequence Generic *04 sl 14ff]
-					</section>
-
-					<section id="042_iii">
-						<h2>04.1 <small>iii</small> Organising and loading image data</h2> 
-						<h3 style="color:gray;">Loading ...</h3>
-						[add sequence Generic *04 sl 14ff]
+						<h2>04.2 <small>iii</small> Organising and loading image data</h2> 
+						<h3 style="color:gray;">Visualising images in <em>ArcGIS Pro</em></h3>
+						<img width=100% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/042_2.png" alt="Fig. 042_2">
 					</section>
 
 				</section>
