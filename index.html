@@ -347,22 +347,15 @@
 						<h3>Time and place</h3>  
 							<p>This course takes place <em>Wednesdays, 16.00 - 18.00</em> in the <b>GI Lab</b>. Press "show schedule" for more details
 							on the current syllabus and schedule for this semester. Updates or any occuring changes you may find in
-<<<<<<< HEAD
-							<a href= "https://online.uni-salzburg.at/plus_online/wbLv.wbShowLVDetail?pStpSpNr=480447">PlusOnline</a>.<p>   
-							<img width=600 height=280 src ="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/011_3.png" alt="Time plan">	
-							<br>Depending on the <a href="https://im.sbg.ac.at/spaces/viewspace.action?key=CORONAINFOS">Covid-19 regulations</a>, the course is offered in hybrid or online mode.</p> 
-										
-=======
-							<a href= "https://online.uni-salzburg.at/plus_online/wbLv.wbShowLVDetail?pStpSpNr=480447">PlusOnline</a>.
-													
-							<div class="r-stack" style="position:relative; top: 50px; left: 10px; width:500px; height:220px; margin:0 auto;" >
+							<a href= "https://online.uni-salzburg.at/plus_online/wbLv.wbShowLVDetail?pStpSpNr=480447">PlusOnline</a>.	
+							<div class="r-stack" style="position:relative; top: 20px; left: 10px; width:500px; height:220px; margin:0 auto;" >
 							<figure>
 								<img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/011_3.png" alt="Time plan" />
 							</figure>
 							</div>
 						  						
 						<div style="font-size:18px">
-							<p>Depending on the Covid-19 regulations, the course is offered in hybrid or online mode. 
+							<p>Depending on the <a href="https://im.sbg.ac.at/spaces/viewspace.action?key=CORONAINFOS">Covid-19 regulations</a>, the course is offered in hybrid or online mode.</p>
 							<ul><li>Challenges</li>
 								<ul><li>No face-to-face contact, harder to get to know each other </li>
 								<li>Difficult to interact, raise questions, contribute to discussions</li></ul>
@@ -370,9 +363,8 @@
 								<ul><li>Testing new ways of blended learning, flipped classroom settings, online material, etc.</li>
 								<li>Option to revisit recorded sessions (if provided)</li>
 								<li>Pre- and after-class sessions open for clarifications, side questions, etc.</li></ul>
-							</ul></div>
-													
->>>>>>> 24772ac7531ae409e7644875aa7b6b7ab3429a19
+							</ul></div>	
+
 							<p><button id="btn">Show schedule</button>	 
 							<div id="syllabus"></div>
 							<script src="js/loadsyl.js"></script>
@@ -435,10 +427,12 @@
 						
 						<h2>01.1 <small>(v)</small> Literature and reference material</h2> 
 						Selected text books are available in the joint library (<b>Material Science</b> building, Booth <b>#32</b>)
-						<p><img width=400 height=240 src ="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/011_5.png" alt="RS books">
-							
-						<p>Please see the following table of <a href="#" id="books">recommended books</a>!
-						<div id="booklist" style="display:none;">
+						<p>
+							<figure>
+									<img width=400 height=240 src ="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/011_5.png" alt="RS books">
+							</figure>
+						<p>Please see the following table of <a href="recommended_books.html" id="books">recommended books</a>!
+						<!--div id="booklist" style="display:none; overflow:auto;">
 							<small><table><tr><td><i>Author and title</i></td><td>Cover</td><td><i>Author and title</i></td><td>Cover</td></tr>
 								<tr><td>P. Gamba & M. Herold (eds.), Global mapping of human settlement - 
 									experiences, datasets, and prospects. Boca Raton: CRC Press</td><td><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/011_5_1.png"></td>
@@ -456,7 +450,7 @@
 									New Yersey: John Wiley & Sons</td><td><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/011_5_7.png"></td>
 								<td>Weng, Q. (2010). Remote sensing and GIS integration. McGraw Hill</td><td><img src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/011_5_8.png"></td></tr>
 							</table></small>
-						</div>
+						</div-->
 
 					</section>
 
@@ -476,8 +470,10 @@
 							</ul></li>
 					</ul>
 
-						<p><img width=600 height=200 src ="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/011_6.png" alt="Software and data">	
-					</section>
+						<figure>
+							<img width=600 height=200 src ="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/011_6.png" alt="Software and data">	
+						</figure>
+						</section>
 
 					<section id= 011_vii>
 						<h2>01.1 <small>(vii)</small> Tutorial</h2> 
@@ -1147,9 +1143,11 @@
 					<section>
 						<h2>03.1 <small>(ii)</small> Vector vs. raster data representation</h2> 
 						<p>Vector data are used to represent <i>spatial discreta</i>, while raster data are the appropriate data model for <i>spatial continua</i>.</p>
+						<figure>
 						<img width=80% height=80% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/031_2.png" alt="Fig. 031_2">
-						<br><small>Object-based image analysis (OBIA) has been developed to bridge between continous observations and object representations.
-						</small></p>	
+						<figcaption>Object-based image analysis (OBIA) has been developed to bridge between continous observations and object representations.
+						</figcaption></p>
+					</figure>	
 					</section>	
 
 					<section>
@@ -1163,8 +1161,10 @@
 					<section>
 						<h2>03.1 <small>(iv)</small> Image matrix and image regions</h2> 
 						<p>An image matrix (or pixel array) is defined by (i) <b>coordinates of origin</b>, (ii) <b>resolution</b> (pixel size), (iii) <b>extent</b> (dimension)</p>
-						<img width=80% height=80% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/031_4.png" alt="Fig. 031_4">
-						<br><small>Image matrix as defined by origin, resolution, extent (left). Image regions as defined by pixel similarity (right) </small></p>
+						<figure>
+							<img width=80% height=80% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/031_4.png" alt="Fig. 031_4">
+							<figcaption>Image matrix as defined by origin, resolution, extent (left). Image regions as defined by pixel similarity (right) </figcaption></p>
+						</figure>
 					</section>
 					
 					<section>
@@ -1348,9 +1348,10 @@
 					<section id="042_i">
 						<h2>04.2 <small>i</small> ArcGIS Pro Image Analysis module</h2> 
 						<h3 style="color:gray;">Visualising images in <em>ArcGIS Pro</em></h3>
-						<img width=100% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/042_1.png" alt="Fig. 042_1">
-						<small>Use the navigation pane to control interaction with image (left). The Swipe function allows to visualise and explore several images simultanously (right).</small>
-						
+						<figure>
+							<img width=100% data-src="https://eo4geo.sbg.ac.at/PLUS/Practice-Image-Processing/042_1.png" alt="Fig. 042_1">
+							<figcaption>Use the navigation pane to control interaction with image (left). The Swipe function allows to visualise and explore several images simultanously (right).</figcaption>
+						</figure>
 					</section>
 
 					<section id="042_ii">
